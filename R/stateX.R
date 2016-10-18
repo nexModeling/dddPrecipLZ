@@ -1,9 +1,9 @@
 #' Precipitation for each elevation zone
 #'
-#' The function \code{stateX()} process the precipitation for each elevation zone
+#' The function \code{stateX()} processes the precipitation for each elevation zone
 #' @param v precipitation value (scalar)
 #' @param modelPrecipLZ
-#'  list(nbLevelZone=a,Plr=b,hfelt=c,midmetp=d)
+#'  list(nbLevelZone,Plr,hfelt,midmetp)
 #' @keywords precipLZ
 #' @export
 #' @examples
