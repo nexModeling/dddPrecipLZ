@@ -9,10 +9,10 @@ stateX(v, modelPrecipLZ)
 \arguments{
 \item{v}{precipitation value (scalar)}
 
-\item{modelPrecipLZ}{list(nbLevelZone=a,Plr=b,hfelt=c,midmetp=d)}
+\item{modelPrecipLZ}{list(nbLevelZone,Plr,hfelt,midmetp)}
 }
 \description{
-The function \code{stateX()} process the precipitation for each elevation zone
+The function \code{stateX()} processes the precipitation for each elevation zone
 }
 \examples{
 \dontrun{
