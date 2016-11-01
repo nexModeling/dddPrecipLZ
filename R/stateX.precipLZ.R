@@ -1,6 +1,6 @@
 #' Precipitation for each elevation zone
 #'
-#' The function \code{stateX()} processes the precipitation for each elevation zone
+#' The function \code{stateX.precipLZ()} processes the precipitation for each elevation zone
 #' @param v precipitation value (scalar)
 #' @param modelPrecipLZ
 #'  list(nbLevelZone,Plr,hfelt,midmetp)
@@ -10,7 +10,7 @@
 #' \dontrun{
 #' stateX()
 #' }
-stateX <- function(v,modelPrecipLZ) {
+stateX.precipLZ <- function(v,modelPrecipLZ) {
   res <- v*(1.0+modelPrecipLZ$Plr*((modelPrecipLZ$hfelt-modelPrecipLZ$midmetp)/100.0))
   return(res)
 }
