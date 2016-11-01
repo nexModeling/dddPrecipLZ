@@ -6,7 +6,7 @@ Authors@R: c(
             person("Zelalem", "Tadege", , "zme@nve.no", c("aut")),
             person("Jean-Marie", "Lepioufle", , "jm@nexmodeling.com", c("aut","cre"))
              )
-Title: TempLZ
+Title: PrecipLZ
 Description: Get a precipitation value onto a set of elevation zones
 Depends:
     R (>= 3.2.5)
