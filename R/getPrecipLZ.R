@@ -14,14 +14,9 @@
 getPrecipLZ <- function(method=NULL,path=NULL,filename=NULL,modelPrecipLZ=NULL) {
 
     precipLZ <- switch(method,
-<<<<<<< HEAD
-                   "processedNVE"        = getPrecipLZ.processedNVE(path=path,filename=filename),
-=======
                    "processedNVE" = getPrecipLZ.processedNVE(path=path,filename=filename),
->>>>>>> refs/remotes/origin/dev
                    "lz"          = getPrecipLZ.lz(path=path,filename=filename,modelPrecipLZ=modelPrecipLZ),
                    (message=paste0("Invalid method:", method,".")))
-
     return(precipLZ)
 }
 
