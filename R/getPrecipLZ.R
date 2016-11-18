@@ -14,7 +14,7 @@
 getPrecipLZ <- function(method=NULL,path=NULL,filename=NULL,modelPrecipLZ=NULL) {
 
     precipLZ <- switch(method,
-                   "none"        = getPrecipLZ.none(path=path,filename=filename),
+                   "processedNVE" = getPrecipLZ.processedNVE(path=path,filename=filename),
                    "lz"          = getPrecipLZ.lz(path=path,filename=filename,modelPrecipLZ=modelPrecipLZ),
                    (message=paste0("Invalid method:", method,".")))
 
@@ -22,7 +22,7 @@ getPrecipLZ <- function(method=NULL,path=NULL,filename=NULL,modelPrecipLZ=NULL) 
 }
 
 
-getPrecipLZ.none <- function(path,filename){
+getPrecipLZ.processedNVE <- function(path,filename){
   env <- environment()
   path <- normalizePath(file.path(path,filename),mustWork = FALSE)
   tmp <- utils::read.table(path,sep="\t")
