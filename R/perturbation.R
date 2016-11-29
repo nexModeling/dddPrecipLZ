@@ -11,6 +11,6 @@
 #' }
 
 perturbation <- function(precip,modelPert){
-  res <- precip+rnorm(n=1,mean=0,sd=modelPert$sig)
+  res <- precip*rnorm(n=1,mean=0,sd=modelPert$sig)
   return(res)
 }
