@@ -11,7 +11,11 @@
 #' }
 
 perturbation <- function(precip,modelPert){
-  res <- precip*rnorm(n=1,mean=0,sd=modelPert$sig)
+  precip <- as.matrix(precip)
+  nc <- ncol(precip)
+  nr <- nrow(precip)
+  n <- nc*nr
+  res <- precip*matrix(rnorm(n=n,mean=0,sd=modelPert$sig*precip),nc=nc,nr=nr)
   res[which(res<0)] <- 0
   return(res)
 }
