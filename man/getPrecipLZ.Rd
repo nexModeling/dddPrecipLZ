@@ -7,7 +7,7 @@
 getPrecipLZ(method = NULL, path = NULL, filename = NULL, ...)
 }
 \arguments{
-\item{method}{method for processing observations, "none", "lz"}
+\item{method}{method for processing observations, "lz", "processedNVE"}
 
 \item{path}{Directory where to get the files}
 

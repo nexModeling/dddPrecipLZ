@@ -15,7 +15,7 @@ perturbation <- function(precip,modelPert){
   nc <- ncol(precip)
   nr <- nrow(precip)
   n <- nc*nr
-  res <- precip*matrix(rnorm(n=n,mean=0,sd=modelPert$sig*precip),nc=nc,nr=nr)
+  res <- precip*matrix(stats::rnorm(n=n,mean=0,sd=modelPert$sig*precip),ncol=nc,nrow=nr)
   res[which(res<0)] <- 0
   return(res)
 }
