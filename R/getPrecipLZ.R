@@ -1,7 +1,7 @@
 #' Get the observations
 #'
 #' Get and process, if needed, the observations
-#' @param method method for processing observations, "none", "lz"
+#' @param method method for processing observations, "lz", "processedNVE"
 #' @param path Directory where to get the files
 #' @param filename Filename (path included) of the file to be read
 #' @param ... options for the different methods
@@ -18,7 +18,6 @@ getPrecipLZ <- function(method=NULL,path=NULL,filename=NULL,...) {
                    "lz"           = getPrecipLZ.lz(path=path,filename=filename,...),
                    "perturbation" = getPrecipLZ.perturbation(path=path,filename=filename,...),
                    (message=paste0("Invalid method:", method,".")))
-
     return(precipLZ)
 }
 
