@@ -4,8 +4,7 @@
 \alias{getPrecipLZ}
 \title{Get the observations}
 \usage{
-getPrecipLZ(method = NULL, path = NULL, filename = NULL,
-  modelPrecipLZ = NULL)
+getPrecipLZ(method = NULL, path = NULL, filename = NULL, ...)
 }
 \arguments{
 \item{method}{method for processing observations, "none", "lz"}
@@ -14,7 +13,7 @@ getPrecipLZ(method = NULL, path = NULL, filename = NULL,
 
 \item{filename}{Filename (path included) of the file to be read}
 
-\item{modelPrecipLZ}{list(nbLevelZone,Plr,hfelt,midmetp)}
+\item{...}{options for the different methods}
 }
 \description{
 Get and process, if needed, the observations
